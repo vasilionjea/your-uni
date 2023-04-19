@@ -1,7 +1,6 @@
 # YourUni
 [![Build Status](https://github.com/vasilionjea/webpack-frontend-template/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/vasilionjea/webpack-frontend-template/actions/workflows/unit-tests.yml)
 
-## Environments
 You must have NodeJS already installed on your machine, then run `npm install` before running any other commands.
 
 ### Dev
