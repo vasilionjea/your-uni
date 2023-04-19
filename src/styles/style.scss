@@ -1,0 +1,19 @@
+@import 'base';
+@import 'helpers';
+@import 'header';
+@import 'hero';
+@import 'components/search-input';
+@import 'components/search-results';
+
+main {
+  max-width: var(--screen-xlg);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.site-search {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: calc(var(--gutter) * 2.5);
+}

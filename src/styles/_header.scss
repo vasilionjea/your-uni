@@ -1,0 +1,33 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 98px;
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+    margin-right: calc(0.5 * var(--gutter));
+  }
+
+  nav {
+    padding: calc(0.5 * var(--gutter)) 0;
+  }
+
+  nav a {
+    padding-bottom: 2px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-primary-dark);
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    &.active {
+      border-bottom: 2px solid var(--color-primary-accent);
+    }
+  }
+}

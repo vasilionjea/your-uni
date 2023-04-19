@@ -1,0 +1,22 @@
+search-input {
+  display: block;
+  font-size: .875rem;
+  font-weight: 400;
+  display: block;
+  border: 2px solid #EEEEEE;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.4);
+  width: 36%;
+
+  input {
+    padding: .875rem;
+    width: 100%;
+    border: none;
+  }
+}
+
+@media screen and (max-width: $screen-lg) {
+  search-input {
+    width: 100%;
+  }
+}

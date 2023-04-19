@@ -1,0 +1,59 @@
+// Media-query vars only
+$screen-sm: 480px;
+$screen-md: 680px;
+$screen-lg: 920px;
+$screen-xlg: 1200px;
+
+:root {
+  --gutter: 2rem;
+  --font-size-base: 1rem;
+  --screen-sm: #{$screen-sm};
+  --screen-md: #{$screen-md};
+  --screen-lg: #{$screen-lg};
+  --screen-xlg: #{$screen-xlg};
+  --color-primary-dark: #000000;
+  --color-primary-light: #FFFFFF;
+  --color-primary-accent: #E16259;
+  --color-text-md: rgba(0, 0, 0, 0.6);
+  --shadow-md: 0px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+}
