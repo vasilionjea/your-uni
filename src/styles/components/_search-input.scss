@@ -8,6 +8,7 @@ search-input {
   color: rgba(0, 0, 0, 0.4);
   width: 36%;
 
+  // TODO: extract styles to a reusable form input
   input {
     padding: .875rem;
     font-size: .925rem;

@@ -4,6 +4,8 @@ $screen-md: 680px;
 $screen-lg: 920px;
 $screen-xlg: 1200px;
 
+// TODO: derive more theme variables (e.g. spacing, typography) in
+// order to clean up magic numbers.
 :root {
   --gutter: 2rem;
   --font-size-base: 1rem;

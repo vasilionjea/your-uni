@@ -9,9 +9,10 @@ search-results {
     color: var(--color-primary-accent);
   }
 
+  // TODO: extract to a general reusable card
   article {
     align-self: start;
-    padding: 16px 20px;
+    padding: 1rem 1.25rem;
     border-radius: 4px;
     box-shadow: var(--shadow-md);
     background-color: var(--color-primary-light);
