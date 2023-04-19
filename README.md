@@ -14,9 +14,7 @@ You must have NodeJS already installed on your machine, then run `npm install` b
 There are only _devDependencies_ listed in _package.json_. Run `npm run deploy` to deploy project.
 
 ## Build pipeline
-I’ve leveraged Webpack and the following tools for development:
-
 * **Typescript:** webpack's `ts-loader` uses `tsc`, the TypeScript compiler, and relies on the project's `tsconfig.json` configuration to compile _.ts_ files to s2017.
 * **Sass:** transforms Sass to CSS.
 * **ESLint & Prettier:** ESLint relies on `.eslintrc.cjs` to lint _.ts_ files, and uses the recommended rules. Prettier formats code and relies on its defaults and the `.prettierrc` file.
-* **Jest:** tests are written with Jest and live under the `test` directory.
+* **Jest:** tests live under the `test` directory (_TODO_).
