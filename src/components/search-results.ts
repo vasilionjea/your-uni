@@ -14,9 +14,9 @@ export default class SearchResults extends Component {
     const { resultList } = this.props as Props;
     if (!resultList) return '';
 
-    return resultList.length ?
-      this.resultsHtml(resultList) :
-      this.noResultsHtml();
+    return resultList.length
+      ? this.resultsHtml(resultList)
+      : this.noResultsHtml();
   }
 
   private recordHtml(record: CsvRecord) {

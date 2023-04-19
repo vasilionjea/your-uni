@@ -14,7 +14,7 @@ const VALUE_DELIMITER = /,/;
 export function csvParse(csvContents: string): ParserResult {
   const data = csvContents.split(ROW_SPLITTER).filter(Boolean);
   const headers = data[0].toLowerCase().split(VALUE_DELIMITER);
-  const rows = data.slice(1).map(row => row.split(VALUE_DELIMITER));
+  const rows = data.slice(1).map((row) => row.split(VALUE_DELIMITER));
   return { headers, rows };
 }
 
@@ -32,8 +32,12 @@ export class CsvRecord {
     return this.attrs.get(key);
   }
 
-  has() { /* TODO */ }
-  set() { /* TODO */ }
+  has() {
+    /* TODO */
+  }
+  set() {
+    /* TODO */
+  }
 
   /**
    * Allows record to be stringified using `JSON.stringify(record)`
@@ -58,7 +62,7 @@ export class CsvTable {
   }
 
   createRecords(rows: CsvRows): CsvRecord[] {
-    return rows.map(data => new CsvRecord(this.headers, data));
+    return rows.map((data) => new CsvRecord(this.headers, data));
   }
 
   getAll() {
@@ -81,9 +85,9 @@ export class CsvTable {
    */
   search(rawQuery = ''): CsvRecord[] {
     const queryTerms = this.parseQuery(rawQuery);
-    const result = this.rows.filter(row => {
+    const result = this.rows.filter((row) => {
       const content = row.join(' ').toLowerCase();
-      return queryTerms.every(term => content.includes(term));
+      return queryTerms.every((term) => content.includes(term));
     });
 
     return this.createRecords(result);

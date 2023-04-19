@@ -24,7 +24,8 @@ export default class App extends State {
 
     this.inputComponent = new SearchInput(this.inputElement, {
       onInputValue: (value: string) => this.debouncedSearch(value),
-      onInputClear: () => this.setState({ resultList: this.dataTable.getAll() }),
+      onInputClear: () =>
+        this.setState({ resultList: this.dataTable.getAll() }),
     });
 
     this.addEventListener('statechange', () => this.renderResults());
@@ -51,6 +52,8 @@ export default class App extends State {
     this.resultsComponent?.destroy?.();
     if (!resultList) return;
 
-    this.resultsComponent = new SearchResults(this.resultsElement, { resultList });
+    this.resultsComponent = new SearchResults(this.resultsElement, {
+      resultList,
+    });
   }
 }
